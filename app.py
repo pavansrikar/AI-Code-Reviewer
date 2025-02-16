@@ -15,7 +15,7 @@ model = genai.GenerativeModel(model_name="gemini-2.0-flash-exp",
 
 
 # streamlit
-st.title("AI Code Reviewer 🤖")
+st.title("An AI Code Reviewer 🤖")
 
 user_prompt = st.text_area("Enter Your Python Code here...", height = 200)
 
