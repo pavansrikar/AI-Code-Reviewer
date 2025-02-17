@@ -1,9 +1,8 @@
 import streamlit as st
 import google.generativeai as genai
+import os
 
-
-f = open(r"C:\Users\mahalakshmi\Downloads\gemini_key.txt")
-key = f.read()
+key = os.getenv("GEMINI_API_KEY")
 
 # API key
 genai.configure(api_key= key)
